@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
+   <children>
+      <ImageView fx:id="background" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/mainmenu.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="319.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="trackButton" layoutX="456.0" layoutY="20.0" mnemonicParsing="false" onAction="#goTrack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="TRACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="sendButton" layoutX="389.0" layoutY="20.0" mnemonicParsing="false" onAction="#sendParcel" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="SEND" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="524.0" layoutY="20.0" mnemonicParsing="false" onAction="#exit" onDragDetected="#exit" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="name" layoutX="428.0" layoutY="79.0" prefHeight="18.0" prefWidth="113.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="dayLabel" layoutX="349.0" layoutY="105.0" prefHeight="25.0" prefWidth="113.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="347.0" layoutY="97.0" prefHeight="12.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <Label alignment="TOP_RIGHT" layoutX="449.0" layoutY="166.0" prefHeight="20.0" prefWidth="121.0" textFill="#214e73">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="generateReport" layoutX="389.0" layoutY="164.0" mnemonicParsing="false" onAction="#gotoRG" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="GENERATE REPORT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

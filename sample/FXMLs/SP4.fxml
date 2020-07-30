@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SP4Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkBox" layoutX="349.0" layoutY="103.0" mnemonicParsing="false" style="-fx-background-color: white;" />
+      <ImageView fx:id="img2" fitHeight="200.0" fitWidth="87.0" layoutX="110.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP626.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img1" fitHeight="200.0" fitWidth="94.0" layoutX="14.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP627.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img6" fitHeight="200.0" fitWidth="96.0" layoutX="491.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP622.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="200.0" fitWidth="118.0" layoutX="394.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP623.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img4" fitHeight="200.0" fitWidth="95.0" layoutX="300.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP624.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="200.0" fitWidth="118.0" layoutX="204.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP625.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fltpouch1" layoutX="27.0" layoutY="356.0" mnemonicParsing="false" onAction="#selectPressed1" prefHeight="25.0" prefWidth="61.0" style="-fx-background-radius: 50px; -fx-background-color: #f87b64;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="fltpouch2" layoutX="124.0" layoutY="356.0" mnemonicParsing="false" onAction="#selectPressed2" prefHeight="25.0" prefWidth="61.0" style="-fx-background-radius: 50px; -fx-background-color: #f87b64;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bxsmall" layoutX="218.0" layoutY="356.0" mnemonicParsing="false" onAction="#selectPressed3" prefHeight="25.0" prefWidth="61.0" style="-fx-background-radius: 50px; -fx-background-color: #f87b64;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bxmed" layoutX="314.0" layoutY="356.0" mnemonicParsing="false" onAction="#selectPressed4" prefHeight="25.0" prefWidth="61.0" style="-fx-background-radius: 50px; -fx-background-color: #f87b64;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bxLarg" layoutX="409.0" layoutY="356.0" mnemonicParsing="false" onAction="#selectPressed5" prefHeight="25.0" prefWidth="61.0" style="-fx-background-radius: 50px; -fx-background-color: #f87b64;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bxXL" layoutX="504.0" layoutY="356.0" mnemonicParsing="false" onAction="#selectPressed6" prefHeight="25.0" prefWidth="61.0" style="-fx-background-radius: 50px; -fx-background-color: #f87b64;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeButton" layoutX="319.0" layoutY="20.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="sendButton" layoutX="389.0" layoutY="20.0" mnemonicParsing="false" onAction="#sendParcel" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="SEND" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="trackButton" layoutX="456.0" layoutY="20.0" mnemonicParsing="false" onAction="#goTrack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="TRACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="524.0" layoutY="20.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="img7" fitHeight="200.0" fitWidth="94.0" layoutX="14.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6216.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img8" fitHeight="200.0" fitWidth="87.0" layoutX="110.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6215.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img9" fitHeight="200.0" fitWidth="118.0" layoutX="204.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6214.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img10" fitHeight="200.0" fitWidth="95.0" layoutX="300.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6213.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img11" fitHeight="200.0" fitWidth="118.0" layoutX="394.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6212.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img12" fitHeight="200.0" fitWidth="96.0" layoutX="491.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP6211.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

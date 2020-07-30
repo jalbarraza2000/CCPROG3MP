@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SP2Controller">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="600.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP21.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="homeButton" layoutX="319.0" layoutY="20.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="sendButton" layoutX="389.0" layoutY="20.0" mnemonicParsing="false" onAction="#sendParcel" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="SEND" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="trackButton" layoutX="456.0" layoutY="20.0" mnemonicParsing="false" onAction="#goTrack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="TRACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="524.0" layoutY="20.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #2c7596; -fx-background-radius: 60px;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" layoutX="503.0" layoutY="356.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #f87b64; -fx-background-radius: 60px;" text="SUBMIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="127.0" prefHeight="27.0" prefWidth="61.0" text="ITEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemNum" alignment="CENTER" layoutX="82.0" layoutY="127.0" prefHeight="27.0" prefWidth="61.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="itemType" layoutX="21.0" layoutY="198.0" onAction="#showSpec" prefWidth="180.0" style="-fx-border-color: #214e73; -fx-background-color: white;" />
+      <ImageView fx:id="DocuSpec" fitHeight="246.0" fitWidth="392.0" layoutX="246.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP23.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="DocuDescp" fitHeight="192.0" fitWidth="343.0" layoutX="-11.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP22.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="pageSpec" layoutX="330.0" layoutY="160.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="pglengthSpec" layoutX="330.0" layoutY="217.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="pgwidthSpec" layoutX="330.0" layoutY="275.0" prefHeight="25.0" prefWidth="81.0" />
+      <ImageView fx:id="ProdDescp" fitHeight="192.0" fitWidth="343.0" layoutX="-8.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP322.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ISPDescp" fitHeight="192.0" fitWidth="343.0" layoutX="-4.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP422.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ProdSpec" fitHeight="218.0" fitWidth="322.0" layoutX="278.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/SP423.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="ProdVal1" layoutX="299.0" layoutY="155.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="ProdVal2" layoutX="297.0" layoutY="211.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="ProdVal3" layoutX="294.0" layoutY="264.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="ProdVal4" layoutX="477.0" layoutY="158.0" prefHeight="17.0" prefWidth="62.0" />
+   </children>
+</AnchorPane>
